@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Perfect Circle — Futuristic</title>
+
+  <!-- Optional: use a clean futuristic font; fallback to system fonts if offline -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo"></div>
+        <div class="title">Fun-Zone — Perfect Circle</div>
+      </div>
+
+      <div class="controls">
+        <div class="difficulty">
+          <button id="easyBtn" class="pill">Easy</button>
+          <button id="mediumBtn" class="pill active">Medium</button>
+          <button id="hardBtn" class="pill">Hardcore</button>
+        </div>
+
+        <div class="toggles">
+          <button id="themeBtn" class="iconBtn" title="Toggle theme">🌙</button>
+          <button id="sparkleBtn" class="iconBtn" title="Toggle sparkles">✨</button>
+          <button id="resetBtn" class="iconBtn danger" title="Reset">⟲</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="stage">
+        <canvas id="canvas" aria-label="Drawing canvas"></canvas>
+
+        <!-- center accuracy popup (appears after evaluation) -->
+        <div id="pop" class="pop hidden">
+          <div id="popAccuracy" class="pop-accuracy">--%</div>
+          <div id="popFinal" class="pop-final">Final: --</div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-row">
+          <div class="stat">
+            <div class="label">Accuracy</div>
+            <div id="accuracy" class="value">--%</div>
+          </div>
+          <div class="stat">
+            <div class="label">Final</div>
+            <div id="final" class="value">--</div>
+          </div>
+        </div>
+
+        <div class="panel-row small">
+          <div class="label">Time</div>
+          <div id="time" class="muted">0.00s</div>
+        </div>
+
+        <div class="panel-row small">
+          <div class="label">Best (session)</div>
+          <div id="best" class="muted">--</div>
+        </div>
+
+        <div id="message" class="message muted">Hold & draw a loop that encloses the red dot.</div>
+
+        <div class="panel-footer muted">Tip: keep radius steady and try to end where you started.</div>
+      </aside>
+    </main>
+
+    <!-- small optional sound (leave empty or provide your own source) -->
+    <audio id="drawSound" src="sounds/draw.mp3" loop></audio>
+    <audio id="highScoreSound" src="sounds/highscore.mp3"></audio>
+    <audio id="errorSound" src="sounds/error.mp3"></audio>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
