@@ -33,9 +33,9 @@ Looking forward to being a part of amFOSS and learning alongside the community.
 --------------|---------------|---------------
 |Task-00   | [Install Linux](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-00)| Completed |
 |Task-01   | [Terminal Wizard](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-01)| Completed|
-|Task-02   | [CodeRush CodeRush: Global Offensive]                                       | Completed|
+|Task-02   | [CodeRush CodeRush: Global Offensive](https://github.com/ThePiR0/Amfoss-TASKS/tree/main/Task-02)| Completed|
 |Task-03   | [Circularity Challenge Pro](http://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-03/Circularity%20Challenge%20Pro)|Completed|
-|Task-04   |[CineScope Advanced|                                                        |Pending  |
+|Task-04   |[CineScope Advanced](https://github.com/ThePiR0/Amfoss-TASKS/tree/main/Task-04/CineScope-S3)|Completed|
 |Task-05   |[TimeTickQuiz v2](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-05)|Completed|
 |Task-06   |[Friendly Neighborhood Bot](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-06/friendly-neighborhood-bot)|Completed|
 |Task-07   |[WordRush+ Mobile app](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-07/word_rush)|Completed|
