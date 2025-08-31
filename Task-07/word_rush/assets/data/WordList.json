@@ -1,0 +1,152 @@
+[
+  {
+    "word": "apple",
+    "difficulty": "easy",
+    "hint": "A common fruit, keeps the doctor away."
+  },
+  {
+    "word": "table",
+    "difficulty": "easy",
+    "hint": "A piece of furniture you dine on."
+  },
+  {
+    "word": "chair",
+    "difficulty": "easy",
+    "hint": "You sit on it."
+  },
+  {
+    "word": "river",
+    "difficulty": "easy",
+    "hint": "A natural stream of water."
+  },
+  {
+    "word": "bread",
+    "difficulty": "easy",
+    "hint": "Common baked food, often sliced."
+  },
+  {
+    "word": "cloud",
+    "difficulty": "easy",
+    "hint": "White and fluffy in the sky."
+  },
+  {
+    "word": "train",
+    "difficulty": "easy",
+    "hint": "Travels on tracks."
+  },
+  {
+    "word": "piano",
+    "difficulty": "easy",
+    "hint": "A musical instrument with keys."
+  },
+  {
+    "word": "orange",
+    "difficulty": "easy",
+    "hint": "A fruit and a color."
+  },
+  {
+    "word": "planet",
+    "difficulty": "easy",
+    "hint": "Earth is one of these."
+  },
+  {
+    "word": "garden",
+    "difficulty": "medium",
+    "hint": "A place where flowers grow."
+  },
+  {
+    "word": "python",
+    "difficulty": "medium",
+    "hint": "A programming language named after a snake."
+  },
+  {
+    "word": "giraffe",
+    "difficulty": "medium",
+    "hint": "Tallest animal on land."
+  },
+  {
+    "word": "diamond",
+    "difficulty": "medium",
+    "hint": "A precious stone, very hard."
+  },
+  {
+    "word": "battery",
+    "difficulty": "medium",
+    "hint": "Powers your phone."
+  },
+  {
+    "word": "picture",
+    "difficulty": "medium",
+    "hint": "Captured with a camera."
+  },
+  {
+    "word": "sandwich",
+    "difficulty": "medium",
+    "hint": "Food with fillings between bread."
+  },
+  {
+    "word": "library",
+    "difficulty": "medium",
+    "hint": "A place full of books."
+  },
+  {
+    "word": "blanket",
+    "difficulty": "medium",
+    "hint": "Keeps you warm at night."
+  },
+  {
+    "word": "mountain",
+    "difficulty": "medium",
+    "hint": "A very tall natural elevation."
+  },
+  {
+    "word": "astronomy",
+    "difficulty": "hard",
+    "hint": "The study of stars and planets."
+  },
+  {
+    "word": "philosophy",
+    "difficulty": "hard",
+    "hint": "The study of fundamental questions about life."
+  },
+  {
+    "word": "architecture",
+    "difficulty": "hard",
+    "hint": "The art of designing buildings."
+  },
+  {
+    "word": "microscope",
+    "difficulty": "hard",
+    "hint": "Used to see tiny things."
+  },
+  {
+    "word": "encyclopedia",
+    "difficulty": "hard",
+    "hint": "A book of general knowledge."
+  },
+  {
+    "word": "laboratory",
+    "difficulty": "hard",
+    "hint": "A place for scientific experiments."
+  },
+  {
+    "word": "revolution",
+    "difficulty": "hard",
+    "hint": "A major change or uprising."
+  },
+  {
+    "word": "temperature",
+    "difficulty": "hard",
+    "hint": "Measures how hot or cold something is."
+  },
+  {
+    "word": "pharmaceutical",
+    "difficulty": "hard",
+    "hint": "Relating to medicine and drugs."
+  },
+  {
+    "word": "civilization",
+    "difficulty": "hard",
+    "hint": "An advanced human society."
+  }
+]
