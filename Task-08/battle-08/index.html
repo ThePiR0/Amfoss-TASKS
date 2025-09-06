@@ -1,0 +1,51 @@
+/*September 4,2025*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body {
+    margin: 0;
+    background: #51A495;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .vertical-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .square {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+    margin: 0 -5px;
+  }
+  .horizontal-stack {
+    display: flex;
+    gap: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="vertical-stack">
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+    <div class="horizontal-stack">
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+  </div>
+</body>
+</html>

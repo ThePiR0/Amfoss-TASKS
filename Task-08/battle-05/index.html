@@ -1,0 +1,60 @@
+/*August 12,2025*/
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      background: #7a6190;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .percent {
+      position: relative;
+      width: 280px;
+      height: 200px;
+    }
+    .percent::before,
+    .percent::after {
+      content: "";
+      position: absolute;
+      width: 90px;  
+      height: 140px;
+      border-radius: 50%;
+      border: 30px solid white;
+      box-sizing: border-box;
+      z-index: 1;
+      background: transparent;
+    }
+    .percent::before {
+      top: 0;
+      left: 0;
+    }
+    .percent::after {
+      bottom: 0;
+      right: 0;
+    }
+    .slash {
+      position: absolute;
+      top: -42px;
+      left: 50%;
+      width: 42px;
+      height: 252px;
+      background: white;
+      transform: skew(-20deg) rotate(1deg);
+      transform-origin: center;
+      margin-left: -21px;
+      z-index: 2; 
+    }
+  </style>
+</head>
+<body>
+  <div class="percent">
+    <div class="slash"></div>
+  </div>
+</body>
+</html>

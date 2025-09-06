@@ -1,0 +1,75 @@
+/*August 18,2025*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      background: #E8AD6D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 320px;
+      height: 210px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      background: #E8AD6D;
+    }
+    .top-bar {
+      width: 250px;
+      height: 50px;
+      background: #3B240C;
+      margin-top: 40px;
+    }
+    .bottom-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      align-items: flex-end;
+    }
+    .square {
+      width: 60px;
+      height: 50px;
+      background: #3B240C;
+    }
+    .semi-circle {
+      width: 100px;
+      height: 50px;
+      background: #3B240C;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      position: relative;
+    }
+    .semi-circle::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 35px;
+      width: 30px;
+      height: 50px;
+      background: #E8AD6D;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar"></div>
+    <div class="bottom-row">
+      <div class="semi-circle"></div>
+      <div class="square"></div>
+      <div class="semi-circle"></div>
+    </div>
+  </div>
+</body>
+</html>
