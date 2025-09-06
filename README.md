@@ -39,7 +39,7 @@ Looking forward to being a part of amFOSS and learning alongside the community.
 |Task-05   |[TimeTickQuiz v2](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-05)|Completed|
 |Task-06   |[Friendly Neighborhood Bot](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-06/friendly-neighborhood-bot)|Completed|
 |Task-07   |[WordRush+ Mobile app](https://github.com/ThePiR0/AMFOSS-TASKS/tree/main/Task-07/word_rush)|Completed|
-|Task-08   |[CSS Master](https://github.com/ThePiR0/Amfoss-TASKS/tree/main/Task-08)|Pending|
+|Task-08   |[CSS Master](https://github.com/ThePiR0/Amfoss-TASKS/tree/main/Task-08)|Completed|
 |Task-09   |[SysForge Mastery] |Pending|
 |Task-10   |[OpenCV Treasure Map]|Pending|
 
