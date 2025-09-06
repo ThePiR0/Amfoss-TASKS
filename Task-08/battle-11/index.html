@@ -1,0 +1,67 @@
+/*August 10,2025*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body {
+    margin: 0;
+    background: #328FC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: #328FC1;
+  }
+  .vertical-bar {
+    position: absolute;
+    background: #243D83;
+    width: 30px;
+    height: 200px;
+    left: 0;
+    top: -50px;
+  }
+  .horizontal-bar {
+    position: absolute;
+    background: #243D83;
+    height: 30px;
+    width: 220px;
+    left: 0;
+    top: 120px;
+  }
+  .slant-bar {
+    position: absolute;
+    background: #243D83;
+    width: 21px;
+    height: 150px;
+    left: 15px;
+    top: 30px;
+    transform-origin: top left;
+    transform: rotate(-45deg);
+  }
+  .yellow-triangle {
+    position: absolute;
+    background: #EBE77E;
+    width: 90px;
+    height: 90px;
+    left: 30px;
+    top: 30px;
+    clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="vertical-bar"></div>
+    <div class="horizontal-bar"></div>
+    <div class="yellow-triangle"></div>
+    <div class="slant-bar"></div>
+  </div>
+</body>
+</html>

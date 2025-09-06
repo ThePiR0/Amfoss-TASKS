@@ -1,0 +1,92 @@
+/*August 25,2025*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  body {
+    margin: 0;
+    background: #2f2a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    position: relative;
+    width: 480px;
+    height: 280px;
+  }
+  .center-bar {
+    position: absolute;
+    background: white;
+    width: 150px;
+    height: 30px;
+    left: 140px;
+  }
+  .center-bar:nth-child(1) {
+    top: 40px;
+  }
+  .center-bar:nth-child(2) {
+    top: 110px;
+  }
+  .center-bar:nth-child(3) {
+    top: 190px;
+  }
+  .side-bar-left {
+    position: absolute;
+    background: white;
+    width: 130px;
+    height: 30px;
+    left: 0;
+    transform-origin: left center;
+  }
+  .side-bar-left:nth-child(4) {
+    top: 15px;
+    transform: rotate(15deg);
+  }
+  .side-bar-left:nth-child(5) {
+    top: 95px;
+    transform: rotate(15deg);
+  }
+  .side-bar-left:nth-child(6) {
+    top: 175px;
+    transform: rotate(15deg);
+  }
+  .side-bar-right {
+    position: absolute;
+    background: white;
+    width: 120px;
+    height: 30px;
+    left: 300px;
+    transform-origin: right center;
+  }
+  .side-bar-right:nth-child(7) {
+    top: 15px;
+    transform: rotate(-15deg);
+  }
+  .side-bar-right:nth-child(8) {
+    top: 95px;
+    transform: rotate(-15deg);
+  }
+  .side-bar-right:nth-child(9) {
+    top: 175px;
+    transform: rotate(-15deg);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="center-bar"></div>
+    <div class="center-bar"></div>
+    <div class="center-bar"></div>
+    <div class="side-bar-left"></div>
+    <div class="side-bar-left"></div>
+    <div class="side-bar-left"></div>
+    <div class="side-bar-right"></div>
+    <div class="side-bar-right"></div>
+    <div class="side-bar-right"></div>
+  </div>
+</body>
+</html>

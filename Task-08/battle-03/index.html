@@ -1,0 +1,63 @@
+//August 5,2025//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #3f3a31;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .glasses {
+      position: relative;
+      width: 400px;
+      height: 100px;
+      background: #FEFF58;
+    }
+
+    .lens-left,
+    .lens-right {
+      position: absolute;
+      top: 20px;
+      width: 150px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .lens-left {
+      left: 0px;
+      background: #D94E4E;
+    }
+
+    .lens-right {
+      right: 0px;
+      background: #3E5AA9;
+    }
+
+    .notch {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 30px solid #3f3a31; 
+    }
+  </style>
+</head>
+<body>
+  <div class="glasses">
+    <div class="lens-left"></div>
+    <div class="lens-right"></div>
+    <div class="notch"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/*August 27,2025*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #3F4869;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+    }
+
+    .outer-circle {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #E25C57;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .inner-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: #3F4869;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .top-cut {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 10px;
+      height: 40px;
+      background-color: #3F4869;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+
+    .bottom-right-cut {
+      position: absolute;
+      bottom: 50px;
+      right: -3px;
+      width: 90px;
+      height: 10px;
+      background-color: #3F4869;
+      z-index: 3;
+    }
+
+    .top-right-square {
+      position: absolute;
+      top: -0.5px;
+      left: 89.5px;
+      width: 60px;
+      height: 90px;
+      background-color: #E25C57;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="outer-circle"></div>
+    <div class="inner-circle"></div>
+    <div class="top-cut"></div>
+    <div class="bottom-right-cut"></div>
+    <div class="top-right-square"></div>
+  </div>
+</body>
+</html>

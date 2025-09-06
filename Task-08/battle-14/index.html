@@ -1,0 +1,69 @@
+/*August 20,2025*/
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      background: #414B81;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: #414B81;
+    }
+    .teardrop {
+      position: absolute;
+      width: 100px; /* increased from 70px */
+      height: 100px; /* increased from 70px */
+      background: #FADE8B;
+      border-radius: 100% / 100%;
+    }
+    .top-left {
+      top: -24px;
+      left: -40px;
+      border-bottom-right-radius: 0% 100%;
+    }
+    .top-right {
+      top: -24px;
+      right: -40px;
+      border-bottom-left-radius: 0% 100%;
+    }
+    .bottom-left {
+      bottom: -24px;
+      left: -40px;
+      border-top-right-radius: 0% 100%;
+    }
+    .bottom-right {
+      bottom: -24px;
+      right: -40px;
+      border-top-left-radius: 0% 100%;
+    }
+    .center-square {
+      position: absolute;
+      width: 80px;
+      height: 50px;
+      background:#FADE8B;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="teardrop top-left"></div>
+    <div class="teardrop top-right"></div>
+    <div class="teardrop bottom-left"></div>
+    <div class="teardrop bottom-right"></div>
+    <div class="center-square"></div>
+  </div>
+</body>
+</html>

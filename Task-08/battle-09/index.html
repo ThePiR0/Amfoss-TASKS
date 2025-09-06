@@ -1,0 +1,73 @@
+/*August 2,2025*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      background: #3B8D8A;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calendar-frame {
+      background: white;
+      width: 260px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius:10px;
+      padding-top: 30px; 
+
+    }
+
+    .calendar-body {
+      background: #3B8D8A;
+      width: 200px;
+      height: 140px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      padding: 12px;
+      box-sizing: border-box;
+    }
+
+    .tile {
+      background: white;
+      width: 30px;
+      height: 30px;
+    }
+
+    .empty {
+      width: 200%;
+      height: 00%;
+    }
+  </style>
+</head>
+<body>
+  <div class="calendar-frame">
+    <div class="calendar-body">
+      <div class="empty"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="empty"></div>
+    </div>
+  </div>
+</body>
+</html>
