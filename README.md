@@ -1,32 +1,39 @@
 # AMFOSS-TASKS
 
 
-# Hello 👋 I'm Aaryan
+Hello 👋 I’m Aaryan
 
-I'm currently pursuing B.Tech in Computer Science and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri. I'm someone who enjoys solving problems through code, learning new technologies, and collaborating with like-minded individuals.
+I’m currently pursuing B.Tech in Computer Science and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri. I enjoy solving problems with code, learning new technologies, and collaborating with people who share the same passion.
 
-## Why should you choose me?
+🌟 Why me?
 
-I’m consistent, curious, and willing to put in the effort to learn and grow. I may not know everything right now, but I’m comfortable starting from scratch and committed to improving over time. I enjoy figuring things out, and I’m not afraid to ask for help or put in extra hours when needed.
+Consistent & Curious – I like to show up every day and keep learning.
 
-## How do I intend to contribute back to the club?
+Growth mindset – I may not know everything yet, but I’m comfortable starting from scratch and improving step by step.
 
-If given the opportunity, I’d like to actively contribute to projects, help with tasks wherever possible, and be a reliable team member. I believe in learning by doing, and I’m excited to participate in activities, discussions, and collaborative work that benefits both the club and its members.
+Reliable – I don’t shy away from putting in the extra effort when the team needs it.
 
-## Fields of Interest & Plans
+🤝 How I’d Contribute
 
-### Web Development  
-I'm currently exploring HTML, CSS, JavaScript, and React. My short-term goal is to get comfortable building frontend applications and gradually understand how backend systems work.
+I want to actively take part in projects, be a dependable teammate, and contribute wherever I can—whether that’s writing code, solving issues, or simply helping others. I believe learning by doing is the best way forward, and I’d love to grow alongside the community while giving back to it.
 
-### Open Source  
-I’m new to open source, but I’m eager to get involved. My plan is to start small—understanding codebases, fixing minor issues, and gradually contributing more meaningfully as I learn.
+🔭 Fields of Interest
 
-### Problem Solving  
-I enjoy solving problems and aim to improve my skills through regular practice on platforms like LeetCode and Codeforces, while building a strong foundation in data structures and algorithms.
+🌐 Web Development
 
----
+Currently exploring HTML, CSS, JavaScript, and React. My short-term goal is to build solid frontend applications and gradually dive deeper into backend systems.
 
-Looking forward to being a part of amFOSS and learning alongside the community.
+🐧 Open Source
+
+Still new, but eager to start with small contributions like understanding codebases and fixing minor issues, and gradually moving on to bigger tasks.
+
+🧩 Problem Solving
+
+Practicing regularly on LeetCode and Codeforces to strengthen my DSA foundation and become a better problem solver.
+
+🌱 Looking Ahead
+
+I see amFOSS as more than just a club—it’s a community where I can learn, contribute, and challenge myself to grow. I’m excited to collaborate, take on real projects, and build things that matter.
 
 
 **Tasks List**|**Description**|**Status**
