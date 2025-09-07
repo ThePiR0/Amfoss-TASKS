@@ -26,12 +26,12 @@ I want to actively take part in projects, be a dependable teammate, and contribu
 Currently exploring HTML, CSS, JavaScript, and React.  
 My short-term goal is to build solid frontend applications and gradually dive deeper into backend systems.  
 
----
+
 
 ### 🐧 Open Source  
 Still new, but eager to start with small contributions like understanding codebases and fixing minor issues, and gradually moving on to bigger tasks.  
 
----
+
 
 ### 🧩 Problem Solving  
 Practicing regularly on LeetCode and Codeforces to strengthen my DSA foundation and become a better problem solver.  
