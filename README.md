@@ -1,39 +1,49 @@
 # AMFOSS-TASKS
 
+# Hello 👋 I’m Aaryan  
 
-Hello 👋 I’m Aaryan
+I’m currently pursuing B.Tech in Computer Science and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri. I enjoy solving problems with code, learning new technologies, and collaborating with people who share the same passion.  
 
-I’m currently pursuing B.Tech in Computer Science and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri. I enjoy solving problems with code, learning new technologies, and collaborating with people who share the same passion.
+---
 
-🌟 Why me?
+## 🌟 Why me?  
 
-Consistent & Curious – I like to show up every day and keep learning.
+- **Consistent & Curious** – I like to show up every day and keep learning.  
+- **Growth mindset** – I may not know everything yet, but I’m comfortable starting from scratch and improving step by step.  
+- **Reliable** – I don’t shy away from putting in the extra effort when the team needs it.  
 
-Growth mindset – I may not know everything yet, but I’m comfortable starting from scratch and improving step by step.
+---
 
-Reliable – I don’t shy away from putting in the extra effort when the team needs it.
+## 🤝 How I’d Contribute  
 
-🤝 How I’d Contribute
+I want to actively take part in projects, be a dependable teammate, and contribute wherever I can—whether that’s writing code, solving issues, or simply helping others. I believe learning by doing is the best way forward, and I’d love to grow alongside the community while giving back to it.  
 
-I want to actively take part in projects, be a dependable teammate, and contribute wherever I can—whether that’s writing code, solving issues, or simply helping others. I believe learning by doing is the best way forward, and I’d love to grow alongside the community while giving back to it.
+---
 
-🔭 Fields of Interest
+## 🔭 Fields of Interest  
 
-🌐 Web Development
+### 🌐 Web Development  
+Currently exploring HTML, CSS, JavaScript, and React.  
+My short-term goal is to build solid frontend applications and gradually dive deeper into backend systems.  
 
-Currently exploring HTML, CSS, JavaScript, and React. My short-term goal is to build solid frontend applications and gradually dive deeper into backend systems.
+---
 
-🐧 Open Source
+### 🐧 Open Source  
+Still new, but eager to start with small contributions like understanding codebases and fixing minor issues, and gradually moving on to bigger tasks.  
 
-Still new, but eager to start with small contributions like understanding codebases and fixing minor issues, and gradually moving on to bigger tasks.
+---
 
-🧩 Problem Solving
+### 🧩 Problem Solving  
+Practicing regularly on LeetCode and Codeforces to strengthen my DSA foundation and become a better problem solver.  
 
-Practicing regularly on LeetCode and Codeforces to strengthen my DSA foundation and become a better problem solver.
+---
 
-🌱 Looking Ahead
+## 🌱 Looking Ahead  
 
-I see amFOSS as more than just a club—it’s a community where I can learn, contribute, and challenge myself to grow. I’m excited to collaborate, take on real projects, and build things that matter.
+I see amFOSS as more than just a club—it’s a community where I can learn, contribute, and challenge myself to grow. I’m excited to collaborate, take on real projects, and build things that matter.  
+
+---
+
 
 
 **Tasks List**|**Description**|**Status**
