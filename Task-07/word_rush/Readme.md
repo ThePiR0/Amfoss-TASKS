@@ -1,6 +1,6 @@
 # Word Rush – Technical Overview
 
-Word Rush is a Flutter-based word puzzle game. This document explains the architecture, code organization, and interactions of all major components.
+Word Rush is a Flutter-based word puzzle game. This document explains the architecture, code organization, and interactions of all major components used in the development of the app.
 
 ---
 
