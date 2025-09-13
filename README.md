@@ -1,49 +1,38 @@
 # AMFOSS-TASKS
 
-# Hello 👋 I’m Aaryan  
+# Hey 👋 I’m Aaryan
 
-I’m currently pursuing B.Tech in Computer Science and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri. I enjoy solving problems with code, learning new technologies, and collaborating with people who share the same passion.  
-
----
-
-## 🌟 Why me?  
-
-- **Consistent & Curious** – I like to show up every day and keep learning.  
-- **Growth mindset** – I may not know everything yet, but I’m comfortable starting from scratch and improving step by step.  
-- **Reliable** – I don’t shy away from putting in the extra effort when the team needs it.  
+CSE student at **Amrita Vishwa Vidyapeetham, Amritapuri**. I love **coding, building things, and learning constantly**. I’m still figuring stuff out (aren’t we all?), but that’s what makes this journey exciting.
 
 ---
 
-## 🤝 How I’d Contribute  
+## 🌟 Why I’m Here
 
-I want to actively take part in projects, be a dependable teammate, and contribute wherever I can—whether that’s writing code, solving issues, or simply helping others. I believe learning by doing is the best way forward, and I’d love to grow alongside the community while giving back to it.  
-
----
-
-## 🔭 Fields of Interest  
-
-### 🌐 Web Development  
-Currently exploring HTML, CSS, JavaScript, and React.  
-My short-term goal is to build solid frontend applications and gradually dive deeper into backend systems.  
-
-
-
-### 🐧 Open Source  
-Still new, but eager to start with small contributions like understanding codebases and fixing minor issues, and gradually moving on to bigger tasks.  
-
-
-
-### 🧩 Problem Solving  
-Practicing regularly on LeetCode and Codeforces to strengthen my DSA foundation and become a better problem solver.  
+* **Curious & Consistent** – Show up, try, fail, repeat.
+* **Growth Mindset** – Don’t know it? I’ll learn it.
+* **Team Player** – If the team needs it, I’ll do my part, however small or big.
 
 ---
 
-## 🌱 Looking Ahead  
+## 🤝 How I Contribute
 
-I see amFOSS as more than just a club—it’s a community where I can learn, contribute, and challenge myself to grow. I’m excited to collaborate, take on real projects, and build things that matter.  
+I **jump in wherever needed**—coding, fixing bugs, brainstorming, or learning alongside others. I believe in **hands-on experience**, and I’m here to **grow while giving back** to the amFOSS community.
 
 ---
 
+## 🔭 What Excites Me
+
+* **Web Dev:** HTML, CSS, JS, React—building apps that actually work.
+* **Open Source:** Newbie, but eager to start small and gradually tackle bigger challenges.
+* **Problem Solving:** LeetCode & Codeforces grind to sharpen DSA skills.
+
+---
+
+## 🌱 Looking Ahead
+
+I see amFOSS as more than a club—it’s a **community of makers, learners, and doers**. I’m here to **learn, collaborate, and contribute meaningfully**. Small steps, real impact—that’s the goal.
+
+---
 
 
 **Tasks List**|**Description**|**Status**
