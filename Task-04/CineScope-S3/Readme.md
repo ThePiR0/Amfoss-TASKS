@@ -151,7 +151,7 @@ palette.setColor(QPalette.Window, QColor(20, 20, 20))
 palette.setColor(QPalette.WindowText, Qt.white)
 ```
 
-The goal is to create an interface where the user feels **comfortable exploring for long periods without fatigue**.
+The goal is to create an interface where the user feels **comfortable exploring for long periods without fatigue and keeping it interesting.**.
 
 ---
 
