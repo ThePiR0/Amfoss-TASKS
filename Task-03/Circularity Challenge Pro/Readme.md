@@ -1,6 +1,6 @@
 ## **Perfect Circle — Futuristic Drawing Game**
 
-This project is an interactive canvas-based game where players attempt to draw a perfect circle around a glowing red dot. The game evaluates the drawing using geometry, applies accuracy and smoothness metrics, and adds a speed bonus. The visuals include glowing sparkles and real-time score updates.
+This project is an interactive canvas-based game where players attempt to draw a perfect circle around a glowing red dot. The game evaluates the drawing using geometry, applies accuracy and smoothness metrics, and adds a speed bonus. The visuals include glowing sparkles and real-time score updates to keep things interactive and eye-catching
 
 ---
 
