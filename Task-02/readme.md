@@ -23,7 +23,7 @@ This README provides the solutions and detailed explanations for the methods I u
    ```
 
 3. **Pick digits greedily**  
-   Choose the smallest digit that satisfies the requirement, add it to the result, and remove it from the pool so it isn’t reused.  
+   Choose the smallest digit that satisfies the requirement, add it to the result, and then remove it from the pool so it isn’t reused.  
    ```python
    for j, d in enumerate(digits):
        if int(d) >= need:
