@@ -1,6 +1,6 @@
 ## **Midtown Tech Discord Bot**
 
-**Midtown Tech Discord Bot** is a moderation and utility bot for Discord servers, designed to automate member onboarding, enforce community guidelines, and provide helpful resources on-demand.
+**Midtown Tech Discord Bot** is a moderation and utility bot for Discord servers, designed to automate member onboarding, enforce community guidelines, and provide helpful resources on-demand for new members.
 
 It leverages **Python**, **discord.py** (`discord.ext.commands`), and **environment variables** for secure token handling.
 
