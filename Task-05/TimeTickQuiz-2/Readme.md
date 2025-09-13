@@ -145,7 +145,7 @@ This ensures users always get **up-to-date** trivia categories.
 2. User chooses quiz settings → question count, difficulty, timer, category  
 3. `QuizEngine` fetches questions and runs the quiz  
 4. Each answer is timed, checked, and scored  
-5. Profile is updated → score, difficulty, high score saved
+5. Profile is updated → score, difficulty, high score saved.
 
 ---
 
