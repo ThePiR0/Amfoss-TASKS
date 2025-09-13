@@ -1,106 +1,150 @@
+## **Solutions and Explanations for HackerRank Challenges**
+
 This README provides the solutions and detailed explanations for the methods I used to solve five programming challenges on HackerRank.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Question- The Beautiful Number
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
+### **Question: The Beautiful Number**
 
-Logic:
+---
 
-1) Sort the digits- Start with the digits in ascending order so we always consider smaller digits first. This was done using 
-"digits=sorted(s)"
+**Logic:**
 
-2) define requirements for each position
-For position i (1 → 10), the required digit must be ≥ (10 − i). This was done using 
-"need=10-i"
+1. **Sort the digits**  
+   Start with the digits in ascending order so we always consider smaller digits first.  
+   ```python
+   digits = sorted(s)
+   ```
 
-3)Pick digits greedily- Choose the smallest digit that satisfies the requirement, add it to the result, and remove it from the pool so it isn’t reused.
+2. **Define requirements for each position**  
+   For position `i (1 → 10)`, the required digit must be ≥ `10 − i`.  
+   ```python
+   need = 10 - i
+   ```
 
-for j, d in enumerate(digits):
-    if int(d) >= need:
-        result.append(d)
-        digits.pop(j)
-        break
+3. **Pick digits greedily**  
+   Choose the smallest digit that satisfies the requirement, add it to the result, and remove it from the pool so it isn’t reused.  
+   ```python
+   for j, d in enumerate(digits):
+       if int(d) >= need:
+           result.append(d)
+           digits.pop(j)
+           break
+   ```
 
-4) Build the final number
+4. **Build the final number**  
+   Join the selected digits into a single string using:  
+   ```python
+   return "".join(result)
+   ```
 
-Join the selected digits into a single string using "return "".join(result)"
+> In short, we greedily build the number position by position, ensuring each digit meets its minimum requirement while keeping the result as small as possible.
 
-In short we greedily build the number position by position, ensuring each digit meets its minimum requirement while keeping the result as small as possible.
+---
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Question- Count '1'
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Logic:
+### **Question: Count '1'**
 
-1) Read inputs-
-First, take the number of test cases t. For each test case, read n and the string s. t = int(input())
-for i in range(t):
-    n = int(input())
-    s = input().strip()
+---
 
-2) Count the number of '1's- Use Python’s string method .count('1').
+**Logic:**
 
-3) We want to compute the number of ones using the formula total_ones=(count of ’1’)×(n−2)+n. I derived this formula since I noticed every string has a baseline contribution equal to its length, n. Then, by testing examples, I saw that each '1' adds roughly (n - 2) extra to the total.
+1. **Read inputs**  
+   First, take the number of test cases `t`. For each test case, read `n` and the string `s`.  
+   ```python
+   t = int(input())
+   for i in range(t):
+       n = int(input())
+       s = input().strip()
+   ```
 
-4) Finally printed the result.
+2. **Count the number of '1's**  
+   Use Python’s string method `.count('1')`.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Question- The Quest For Perfect Arrays
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Logic:
+3. **Compute total ones using derived formula**  
+   ```python
+   total_ones = (count of '1') × (n − 2) + n
+   ```
+   I derived this formula since I noticed every string has a baseline contribution equal to its length, `n`. Then, by testing examples, I saw that each '1' adds roughly `(n - 2)` extra to the total.
 
+4. **Print the result**
 
-1) Initialize the answer done by using ans=n.
+---
 
-2) Handle even numbers. Filter out all even numbers. If there are any, find the smallest (L) and largest (R) even number. Count how many numbers in the original array are within [L, R]. The number to remove = n - keep. Update ans if it’s smaller.
+### **Question: The Quest For Perfect Arrays**
 
-3)Handle odd numbers- Repeat the same process for odd numbers.
+---
 
-4) Output the result.
+**Logic:**
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Question- The Blender's Limit
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. **Initialize the answer**  
+   ```python
+   ans = n
+   ```
 
-Logic:
+2. **Handle even numbers**  
+   - Filter out all even numbers.  
+   - If there are any, find the smallest (`L`) and largest (`R`) even number.  
+   - Count how many numbers in the original array are within `[L, R]`.  
+   - The number to remove = `n - keep`.  
+   - Update `ans` if it’s smaller.
 
-1) Read the inputs
+3. **Handle odd numbers**  
+   Repeat the same process as even numbers.
 
-2) Choose the slower rate- Since the faster rate can’t help reduce the steps below the slower rate, we take: rate=min(x, y).
+4. **Output the result**
 
-3) Compute the number of steps-Divide the total items n by the chosen rate and round up to account for any remaining items: import math print(math.ceil(n/rate)).
+---
 
-4) Output the result.
+### **Question: The Blender's Limit**
 
+---
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Question- Race 10
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Logic:**
 
-Logic:
+1. **Read the inputs**
 
-1) Read inputs.
+2. **Choose the slower rate**  
+   Since the faster rate can’t help reduce the steps below the slower rate, we take:  
+   ```python
+   rate = min(x, y)
+   ```
 
-2) Calculate Alice’s distances:
-alice_x=abs(a-x)
-alice_y=abs(a-y)
+3. **Compute the number of steps**  
+   Divide the total items `n` by the chosen rate and round up to account for any remaining items:  
+   ```python
+   import math  
+   print(math.ceil(n / rate))
+   ```
 
-3) Check every possible Bob choice.Bob can pick numbers from 1 to 100 except Alice’s number. If Bob’s distances to both x and y are smaller than Alice’s, we have a solution.
+4. **Output the result**
 
- for bob in range(1, 101):
-        if bob == a:
-            continue  
+---
 
-        if abs(bob - x) < alice_x and abs(bob - y) < alice_y:
-            print("YES")
-            break
-    else:
-        print("NO")
+### **Question: Race 10**
 
-4) Print the result.
+---
 
+**Logic:**
 
+1. **Read inputs**
 
+2. **Calculate Alice’s distances:**  
+   ```python
+   alice_x = abs(a - x)  
+   alice_y = abs(a - y)
+   ```
 
+3. **Check every possible Bob choice**  
+   Bob can pick numbers from `1` to `100` except Alice’s number. If Bob’s distances to both `x` and `y` are smaller than Alice’s, we have a solution.  
+   ```python
+   for bob in range(1, 101):
+       if bob == a:
+           continue  
+       if abs(bob - x) < alice_x and abs(bob - y) < alice_y:
+           print("YES")
+           break
+   else:
+       print("NO")
+   ```
 
+4. **Print the result**
