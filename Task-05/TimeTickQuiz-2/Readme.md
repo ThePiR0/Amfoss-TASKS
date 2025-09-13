@@ -1,58 +1,65 @@
-TimeTickQuiz Pro
+## **TimeTickQuiz Pro**
 
-TimeTickQuiz Pro is a Python-based command-line trivia game that fetches real-time questions from the Open Trivia Database (OpenTDB)
-. It is designed to provide an engaging quiz experience with features like timed responses, adaptive difficulty, score persistence, and category selection.
+**TimeTickQuiz Pro** is a Python-based command-line trivia game that fetches real-time questions from the [Open Trivia Database (OpenTDB)](https://opentdb.com/).  
+It is designed to provide an engaging quiz experience with features like timed responses, adaptive difficulty, score persistence, and category selection.
 
-Project Overview
+---
 
-The project is divided into four core components:
+### **Project Overview**
 
-main.py – The entry point of the program. Handles user input, displays options, and initializes the quiz.
+The project is divided into **four core components**:
 
-quiz_engine.py – Implements the core quiz logic: fetching questions, presenting them, applying time limits, and scoring responses.
-
-user_profile.py – Manages user data such as scores, high scores, difficulty level, and profile persistence.
-
-utils.py – Provides helper functions for saving/loading user profiles and fetching quiz categories.
+- `main.py` – The entry point of the program. Handles user input, displays options, and initializes the quiz.  
+- `quiz_engine.py` – Implements the core quiz logic: fetching questions, presenting them, applying time limits, and scoring responses.  
+- `user_profile.py` – Manages user data such as scores, high scores, difficulty level, and profile persistence.  
+- `utils.py` – Provides helper functions for saving/loading user profiles and fetching quiz categories.
 
 Together, these files create a seamless quiz system where users can repeatedly play, improve their scores, and track progress over time.
 
-How It Works
-1. Entry Point: main.py
+---
 
-The game starts by prompting the player for their username. If a profile with that username exists, it is loaded; otherwise, a new profile is created.
+### **How It Works**
 
+---
+
+### **1. Entry Point: `main.py`**
+
+The game starts by prompting the player for their **username**.  
+If a profile with that username exists, it is loaded; otherwise, a new one is created.
+
+```python
 username = Prompt.ask("Enter your username").strip()
 user = UserProfile(username)
-
+```
 
 The player is then asked to configure the quiz:
 
-Number of questions (1–20)
-
-Difficulty (easy, medium, hard)
-
-Time limit per question (in seconds)
-
-Category (fetched dynamically from OpenTDB)
+- Number of questions (1–20)  
+- Difficulty (easy, medium, hard)  
+- Time limit per question (in seconds)  
+- Category (fetched dynamically from OpenTDB)
 
 Example:
 
+```python
 num_questions = IntPrompt.ask("How many questions? (1-20)", default=5)
 difficulty = Prompt.ask("Choose difficulty", choices=["easy", "medium", "hard"], default="medium")
 time_limit = IntPrompt.ask("Time limit per question (seconds)", default=10)
+```
 
+Once configured, `QuizEngine` is initialized, and the quiz begins.
 
-Once configured, QuizEngine is initialized, and the quiz begins.
+---
 
-2. Quiz Flow: quiz_engine.py
+### **2. Quiz Flow: `quiz_engine.py`**
 
-The QuizEngine is responsible for retrieving questions and enforcing the quiz rules.
+The `QuizEngine` is responsible for retrieving questions and enforcing the quiz rules.
 
-Fetching Questions
+#### **Fetching Questions**
 
-Questions are fetched from the OpenTDB API using the user’s chosen category, difficulty, and question count.
+Questions are fetched from the OpenTDB API using the selected settings:
 
+```python
 params = {
     "amount": self.num_questions,
     "difficulty": self.difficulty.lower(),
@@ -61,39 +68,43 @@ params = {
 }
 response = requests.get(QUESTION_URL, params=params)
 self.questions = response.json()["results"]
+```
 
-Presenting Questions
+#### **Presenting Questions**
 
-Each question is displayed with shuffled multiple-choice answers. Input is collected on a separate thread so that a time limit can be applied.
+Each question is displayed with **shuffled multiple-choice answers**.  
+Input is collected on a separate thread to enforce the **time limit**.
 
+```python
 def ask_question(self, question_data):
     question = html.unescape(question_data["question"])
     correct_answer = html.unescape(question_data["correct_answer"])
     options = [html.unescape(ans) for ans in question_data["incorrect_answers"]]
     options.append(correct_answer)
     random.shuffle(options)
+```
 
+If the user fails to answer in time, the question is **automatically marked incorrect**.
 
-If the user fails to answer within the time limit, the question is marked incorrect automatically.
+#### **Scoring**
 
-Scoring
+- Each correct answer gives **+1 point**
+- Final score is displayed after the quiz ends
 
-Correct answers increase the player’s score by one point. The total is displayed at the end of the quiz.
+---
 
-3. User Profiles: user_profile.py
+### **3. User Profiles: `user_profile.py`**
 
-Each user has a persistent profile stored in profiles.json. Profiles store:
+Each user has a **persistent profile** stored in `profiles.json`. Profiles include:
 
-Username
+- Username  
+- Current score  
+- High score  
+- Adaptive difficulty level  
 
-Current score
+When players perform well, their difficulty **adapts automatically**:
 
-High score
-
-Adaptive difficulty level
-
-When a player answers correctly, their score increases, and difficulty can scale automatically:
-
+```python
 def adapt_difficulty(self):
     if self.score >= 50:
         self.difficulty = "hard"
@@ -101,38 +112,41 @@ def adapt_difficulty(self):
         self.difficulty = "medium"
     else:
         self.difficulty = "easy"
+```
 
+Profiles are **saved after each game**, ensuring progress is preserved across sessions.
 
-Profiles are saved after each game, ensuring progress is preserved across sessions.
+---
 
-4. Utilities: utils.py
+### **4. Utilities: `utils.py`**
 
-The utilities module supports the system by:
+The utilities module supports:
 
-Loading and saving profiles from profiles.json
+- Loading/saving profiles from `profiles.json`  
+- Updating profile scores  
+- Fetching the latest quiz categories from OpenTDB
 
-Updating profiles when scores change
+Example – Fetching available categories:
 
-Fetching quiz categories from OpenTDB
-
-Example for fetching categories:
-
+```python
 def get_categories():
     response = requests.get(CATEGORY_URL, timeout=5)
     data = response.json()
     return {cat["id"]: cat["name"] for cat in data.get("trivia_categories", [])}
+```
+
+This ensures users always get **up-to-date** trivia categories.
+
+---
+
+### **Execution Flow**
+
+1. `main.py` starts → prompts user for input → loads profile  
+2. User chooses quiz settings → question count, difficulty, timer, category  
+3. `QuizEngine` fetches questions and runs the quiz  
+4. Each answer is timed, checked, and scored  
+5. Profile is updated → score, difficulty, high score saved
+
+---
 
 
-This ensures that available categories are always current.
-
-Execution Flow
-
-main.py starts, prompts user for input, and loads the profile.
-
-Quiz settings (questions, difficulty, time, category) are chosen.
-
-QuizEngine fetches questions and runs the quiz.
-
-Each answer is checked against a timer and scored accordingly.
-
-Profile is updated with the latest score and saved.
